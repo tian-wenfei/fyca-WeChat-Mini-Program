@@ -15,7 +15,7 @@ Page({
   goToPage(e) {
     const page = e.currentTarget.dataset.page
     // 检查是否是tabBar页面
-    const tabBarPages = ['/pages/index/index', '/pages/about/about', '/pages/technology/technology', '/pages/value/value', '/pages/contact/contact']
+    const tabBarPages = ['/pages/index/index', '/pages/about/about', '/pages/technology/technology', '/pages/value/value', '/pages/team/team']
     if (tabBarPages.includes(page)) {
       wx.switchTab({
         url: page

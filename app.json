@@ -5,8 +5,7 @@
     "pages/technology/technology",
     "pages/value/value",
     "pages/team/team",
-    "pages/missing/missing",
-    "pages/contact/contact"
+    "pages/missing/missing"
   ],
   "subpackages": [
     {
@@ -44,7 +43,7 @@
         "text": "价值"
       },
       {
-        "pagePath": "pages/contact/contact",
+        "pagePath": "pages/team/team",
         "text": "联系"
       }
     ]

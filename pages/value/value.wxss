@@ -1,21 +1,34 @@
 .container {
-  padding-bottom: 40rpx;
+  padding-bottom: 60rpx;
 }
 
-/* 顶部标语 */
 .value-header {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  margin: -20rpx -20rpx 20rpx;
-  padding: 60rpx 40rpx;
+  margin: -20rpx -20rpx 32rpx;
+  padding: 64rpx 40rpx;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.value-header::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  width: 60%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 60%);
 }
 
 .header-title {
   display: block;
-  font-size: 44rpx;
+  font-size: 48rpx;
   font-weight: bold;
   color: white;
   margin-bottom: 16rpx;
+  position: relative;
+  z-index: 1;
 }
 
 .header-subtitle {
@@ -23,37 +36,62 @@
   font-size: 28rpx;
   color: rgba(255,255,255,0.9);
   letter-spacing: 8rpx;
+  position: relative;
+  z-index: 1;
 }
 
-/* 核心价值卡片 */
 .value-cards {
-  margin: 20rpx 0;
+  margin: 0 24rpx 32rpx;
 }
 
 .value-card {
   background: var(--card-bg);
-  border-radius: 16rpx;
-  padding: 40rpx;
+  border-radius: 24rpx;
+  padding: 36rpx;
   margin-bottom: 24rpx;
-  box-shadow: 0 4rpx 16rpx rgba(46, 125, 50, 0.1);
-  border-left: 8rpx solid var(--primary-color);
+  box-shadow: 0 8rpx 32rpx rgba(46, 125, 50, 0.08);
+  border: 1rpx solid rgba(46, 125, 50, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.value-quality {
-  border-left-color: #D2691E;
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8rpx;
+  height: 100%;
 }
 
-.value-innovation {
-  border-left-color: #CD853F;
+.value-quality::before {
+  background: linear-gradient(180deg, #D2691E, #CD853F);
 }
 
-.value-responsibility {
-  border-left-color: #8B4513;
+.value-innovation::before {
+  background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+}
+
+.value-responsibility::before {
+  background: linear-gradient(180deg, #8B4513, #A0522D);
+}
+
+.value-card:active {
+  transform: scale(0.99);
 }
 
 .card-icon {
-  font-size: 64rpx;
-  margin-bottom: 20rpx;
+  width: 96rpx;
+  height: 96rpx;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 6rpx 20rpx rgba(46, 125, 50, 0.2);
 }
 
 .card-title {
@@ -68,50 +106,60 @@
   display: block;
   font-size: 28rpx;
   color: var(--text-light);
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 24rpx;
 }
 
 .value-points {
   display: flex;
   flex-wrap: wrap;
-  gap: 16rpx;
+  gap: 14rpx;
 }
 
 .point {
-  background: rgba(46, 125, 50, 0.1);
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.15));
   color: var(--primary-color);
-  padding: 8rpx 20rpx;
+  padding: 10rpx 20rpx;
   border-radius: 20rpx;
   font-size: 24rpx;
+  font-weight: 500;
+  border: 1rpx solid rgba(46, 125, 50, 0.15);
 }
 
-/* 品质承诺 */
 .promise-list {
-  margin: 20rpx 0;
+  margin: 0 24rpx 32rpx;
 }
 
 .promise-item {
   display: flex;
   align-items: center;
   background: var(--card-bg);
-  border-radius: 16rpx;
-  padding: 30rpx;
+  border-radius: 20rpx;
+  padding: 32rpx;
   margin-bottom: 20rpx;
-  box-shadow: 0 4rpx 16rpx rgba(46, 125, 50, 0.1);
+  box-shadow: 0 6rpx 24rpx rgba(46, 125, 50, 0.06);
+  border: 1rpx solid rgba(46, 125, 50, 0.06);
+  transition: all 0.3s ease;
+}
+
+.promise-item:active {
+  transform: scale(0.98);
 }
 
 .promise-icon {
   width: 100rpx;
   height: 100rpx;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  border-radius: 50%;
+  border-radius: 24rpx;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 48rpx;
-  margin-right: 24rpx;
+  margin-right: 28rpx;
   flex-shrink: 0;
+  box-shadow: 0 6rpx 20rpx rgba(46, 125, 50, 0.2);
 }
 
 .promise-content {
@@ -130,57 +178,85 @@
   display: block;
   font-size: 26rpx;
   color: var(--text-light);
+  line-height: 1.5;
 }
 
-/* 创新成果统计 */
 .innovation-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16rpx;
-  margin: 20rpx 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+  margin: 0 24rpx 32rpx;
 }
 
 .inno-item {
   background: var(--card-bg);
-  border-radius: 16rpx;
-  padding: 24rpx 10rpx;
+  border-radius: 20rpx;
+  padding: 32rpx 24rpx;
   text-align: center;
-  box-shadow: 0 4rpx 16rpx rgba(46, 125, 50, 0.1);
+  box-shadow: 0 6rpx 24rpx rgba(46, 125, 50, 0.06);
+  border: 1rpx solid rgba(46, 125, 50, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.inno-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
 .inno-number {
   display: block;
-  font-size: 36rpx;
+  font-size: 44rpx;
   font-weight: bold;
   color: var(--primary-color);
   margin-bottom: 8rpx;
+  letter-spacing: -1rpx;
 }
 
 .inno-label {
   display: block;
-  font-size: 22rpx;
+  font-size: 24rpx;
   color: var(--text-light);
+  font-weight: 500;
 }
 
-/* 社会责任网格 */
 .social-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20rpx;
-  margin: 20rpx 0;
+  margin: 0 24rpx;
 }
 
 .social-item {
   background: var(--card-bg);
-  border-radius: 16rpx;
-  padding: 30rpx;
+  border-radius: 20rpx;
+  padding: 32rpx 24rpx;
   text-align: center;
-  box-shadow: 0 4rpx 16rpx rgba(46, 125, 50, 0.1);
+  box-shadow: 0 6rpx 24rpx rgba(46, 125, 50, 0.05);
+  border: 1rpx solid rgba(46, 125, 50, 0.06);
+  transition: all 0.3s ease;
+}
+
+.social-item:active {
+  transform: scale(0.98);
 }
 
 .social-icon {
-  font-size: 56rpx;
-  margin-bottom: 16rpx;
+  width: 88rpx;
+  height: 88rpx;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 22rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44rpx;
+  margin: 0 auto 20rpx;
+  box-shadow: 0 6rpx 20rpx rgba(46, 125, 50, 0.2);
 }
 
 .social-title {
@@ -198,35 +274,37 @@
   line-height: 1.5;
 }
 
-/* 客户评价 */
 .review-list {
-  margin: 20rpx 0;
+  margin: 0 24rpx;
 }
 
 .review-card {
   background: var(--card-bg);
-  border-radius: 16rpx;
-  padding: 30rpx;
+  border-radius: 20rpx;
+  padding: 32rpx;
   margin-bottom: 20rpx;
-  box-shadow: 0 4rpx 16rpx rgba(46, 125, 50, 0.1);
+  box-shadow: 0 6rpx 24rpx rgba(46, 125, 50, 0.06);
+  border: 1rpx solid rgba(46, 125, 50, 0.06);
 }
 
 .review-header {
   display: flex;
   align-items: center;
-  margin-bottom: 20rpx;
+  margin-bottom: 24rpx;
 }
 
 .review-avatar {
-  width: 80rpx;
-  height: 80rpx;
+  width: 88rpx;
+  height: 88rpx;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 40rpx;
-  margin-right: 20rpx;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+  box-shadow: 0 4rpx 16rpx rgba(46, 125, 50, 0.2);
 }
 
 .review-info {
@@ -243,11 +321,12 @@
 
 .review-stars {
   display: flex;
+  gap: 6rpx;
 }
 
 .star {
-  font-size: 24rpx;
-  margin-right: 4rpx;
+  font-size: 26rpx;
+  color: #FFD700;
 }
 
 .review-content {
@@ -255,4 +334,36 @@
   color: var(--text-light);
   line-height: 1.8;
   font-style: italic;
+}
+
+.footer {
+  text-align: center;
+  padding: 48rpx 0 24rpx;
+}
+
+.footer-text {
+  display: block;
+  font-size: 24rpx;
+  color: var(--text-light);
+  margin-bottom: 8rpx;
+}
+
+.footer-icp {
+  font-size: 22rpx;
+  color: var(--text-light);
+  opacity: 0.7;
+}
+
+@media (max-width: 375px) {
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .innovation-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .header-title {
+    font-size: 42rpx;
+  }
 }

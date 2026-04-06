@@ -1,11 +1,9 @@
 <view class="container">
-  <!-- 顶部标题 -->
   <view class="team-header">
-    <text class="header-title">项目团队</text>
+    <text class="header-title">团队与联系</text>
     <text class="header-subtitle">专业团队 · 匠心品质</text>
   </view>
 
-  <!-- 核心团队 -->
   <view class="section-title">核心团队</view>
   <view class="team-list">
     <view class="team-card" wx:for="{{coreTeam}}" wx:key="id">
@@ -20,17 +18,6 @@
     </view>
   </view>
 
-  <!-- 组织架构 -->
-  <view class="section-title">组织架构</view>
-  <view class="dept-grid">
-    <view class="dept-item" wx:for="{{departments}}" wx:key="id">
-      <text class="dept-icon">{{item.icon}}</text>
-      <text class="dept-name">{{item.name}}</text>
-      <text class="dept-count">{{item.count}}人</text>
-    </view>
-  </view>
-
-  <!-- 专家顾问 -->
   <view class="section-title">专家顾问</view>
   <view class="advisor-list">
     <view class="advisor-card" wx:for="{{advisors}}" wx:key="id">
@@ -43,35 +30,77 @@
     </view>
   </view>
 
-  <!-- 团队文化 -->
   <view class="section-title">团队文化</view>
   <view class="culture-card">
     <view class="culture-item">
-      <text class="culture-icon">🎯</text>
+      <view class="culture-icon">🎯</view>
       <text class="culture-title">专业专注</text>
       <text class="culture-desc">专注茯茶产业，追求极致品质</text>
     </view>
     <view class="culture-item">
-      <text class="culture-icon">🤝</text>
+      <view class="culture-icon">🤝</view>
       <text class="culture-title">协作共赢</text>
       <text class="culture-desc">团队协作，共同成长</text>
     </view>
     <view class="culture-item">
-      <text class="culture-icon">💡</text>
+      <view class="culture-icon">💡</view>
       <text class="culture-title">持续创新</text>
       <text class="culture-desc">勇于创新，引领行业</text>
     </view>
     <view class="culture-item">
-      <text class="culture-icon">❤️</text>
+      <view class="culture-icon">❤️</view>
       <text class="culture-title">回馈社会</text>
       <text class="culture-desc">热心公益，责任担当</text>
     </view>
   </view>
 
-  <!-- 加入我们 -->
+  <view class="section-title">联系方式</view>
+  <view class="contact-cards">
+    <view class="contact-card" bindtap="copyEmail">
+      <view class="card-icon">✉️</view>
+      <text class="card-label">电子邮箱</text>
+      <text class="card-value">948979226@qq.com</text>
+    </view>
+    <view class="contact-card" bindtap="makePhoneCall">
+      <view class="card-icon">📞</view>
+      <text class="card-label">联系电话</text>
+      <text class="card-value">+86 15091730188</text>
+    </view>
+    <view class="contact-card">
+      <view class="card-icon">📍</view>
+      <text class="card-label">公司地址</text>
+      <text class="card-value">陕西省西安市长安区子午大道中段39号</text>
+    </view>
+  </view>
+
+  <view class="section-title">关注我们</view>
+  <view class="social-section">
+    <view class="social-item" bindtap="openWechat">
+      <view class="social-icon">📱</view>
+      <text class="social-name">微信</text>
+    </view>
+    <view class="social-item" bindtap="openDouyin">
+      <view class="social-icon">📺</view>
+      <text class="social-name">抖音</text>
+    </view>
+    <view class="social-item" bindtap="openWebsite">
+      <view class="social-icon">🌐</view>
+      <text class="social-name">官网</text>
+    </view>
+    <view class="social-item" bindtap="openWeibo">
+      <view class="social-icon">📝</view>
+      <text class="social-name">微博</text>
+    </view>
+  </view>
+
   <view class="join-section">
     <text class="join-title">加入我们</text>
     <text class="join-desc">诚邀有志之士加入茯忆长安大家庭</text>
-    <button class="join-btn" bindtap="contactUs">联系我们</button>
+    <button class="join-btn" bindtap="makePhoneCall">立即联系</button>
+  </view>
+
+  <view class="footer">
+    <text class="footer-text">© 2026 茯忆长安 版权所有</text>
+    <text class="footer-icp">陕ICP备2026007411号</text>
   </view>
 </view>

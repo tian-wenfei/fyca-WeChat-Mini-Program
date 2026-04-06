@@ -47,7 +47,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.19.4",
+  "libVersion": "3.15.1",
   "appid": "wx1c2bce021e06b6a4",
   "projectname": "茯忆长安",
   "isGameTourist": false,

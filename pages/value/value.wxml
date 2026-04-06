@@ -1,11 +1,9 @@
 <view class="container">
-  <!-- 顶部标语 -->
   <view class="value-header">
     <text class="header-title">核心价值</text>
     <text class="header-subtitle">品质 · 创新 · 责任</text>
   </view>
 
-  <!-- 核心价值 -->
   <view class="section-title">核心价值</view>
   <view class="value-cards">
     <view class="value-card value-quality">
@@ -18,7 +16,7 @@
         <text class="point">✓ 5G物联网</text>
       </view>
     </view>
-    
+
     <view class="value-card value-innovation">
       <view class="card-icon">🌱</view>
       <text class="card-title">助农增收</text>
@@ -29,7 +27,7 @@
         <text class="point">✓ 产业升级</text>
       </view>
     </view>
-    
+
     <view class="value-card value-responsibility">
       <view class="card-icon">🏭</view>
       <text class="card-title">产业升级</text>
@@ -42,7 +40,6 @@
     </view>
   </view>
 
-  <!-- 品质承诺 -->
   <view class="section-title">品质承诺</view>
   <view class="promise-list">
     <view class="promise-item" wx:for="{{promises}}" wx:key="id">
@@ -54,9 +51,6 @@
     </view>
   </view>
 
-
-
-  <!-- 社会责任 -->
   <view class="section-title">社会责任</view>
   <view class="social-grid">
     <view class="social-item">
@@ -81,5 +75,8 @@
     </view>
   </view>
 
-
+  <view class="footer">
+    <text class="footer-text">© 2026 茯忆长安 版权所有</text>
+    <text class="footer-icp">陕ICP备2026007411号</text>
+  </view>
 </view>

@@ -65,4 +65,9 @@
   <view class="source-section">
     <text class="source-text">数据来源：公安部儿童失踪信息紧急发布平台</text>
   </view>
+
+  <view class="footer">
+    <text class="footer-text">© 2026 茯忆长安 版权所有</text>
+    <text class="footer-icp">陕ICP备2026007411号</text>
+  </view>
 </view>

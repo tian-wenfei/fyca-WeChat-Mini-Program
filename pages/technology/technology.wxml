@@ -94,5 +94,8 @@
     </view>
   </view>
 
-
+  <view class="footer">
+    <text class="footer-text">© 2026 茯忆长安 版权所有</text>
+    <text class="footer-icp">陕ICP备2026007411号</text>
+  </view>
 </view>
