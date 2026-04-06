@@ -1,0 +1,85 @@
+<view class="container">
+  <!-- 顶部标语 -->
+  <view class="value-header">
+    <text class="header-title">核心价值</text>
+    <text class="header-subtitle">品质 · 创新 · 责任</text>
+  </view>
+
+  <!-- 核心价值 -->
+  <view class="section-title">核心价值</view>
+  <view class="value-cards">
+    <view class="value-card value-quality">
+      <view class="card-icon">🤖</view>
+      <text class="card-title">技术突破</text>
+      <text class="card-desc">AI视觉识别精度≥98%，结合红外光谱与5G物联网，实现富硒茯茶发花过程精准智控，金花密度提升50%</text>
+      <view class="value-points">
+        <text class="point">✓ AI视觉识别</text>
+        <text class="point">✓ 红外光谱技术</text>
+        <text class="point">✓ 5G物联网</text>
+      </view>
+    </view>
+    
+    <view class="value-card value-innovation">
+      <view class="card-icon">🌱</view>
+      <text class="card-title">助农增收</text>
+      <text class="card-desc">已帮助汉中市西乡镇15户农户年均增收3.2万元，发花成功率提至98.6%，较传统方式提高32个百分点</text>
+      <view class="value-points">
+        <text class="point">✓ 农户增收</text>
+        <text class="point">✓ 提高成功率</text>
+        <text class="point">✓ 产业升级</text>
+      </view>
+    </view>
+    
+    <view class="value-card value-responsibility">
+      <view class="card-icon">🏭</view>
+      <text class="card-title">产业升级</text>
+      <text class="card-desc">推动茶产业从"经验依赖"向"数据驱动"转型，茶叶利用效率提升55%，能耗降低12%，创造121个就业岗位</text>
+      <view class="value-points">
+        <text class="point">✓ 数据驱动</text>
+        <text class="point">✓ 效率提升</text>
+        <text class="point">✓ 就业创造</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 品质承诺 -->
+  <view class="section-title">品质承诺</view>
+  <view class="promise-list">
+    <view class="promise-item" wx:for="{{promises}}" wx:key="id">
+      <view class="promise-icon">{{item.icon}}</view>
+      <view class="promise-content">
+        <text class="promise-title">{{item.title}}</text>
+        <text class="promise-desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- 社会责任 -->
+  <view class="section-title">社会责任</view>
+  <view class="social-grid">
+    <view class="social-item">
+      <view class="social-icon">🔍</view>
+      <text class="social-title">公益寻人</text>
+      <text class="social-desc">运用AI技术帮助失踪家庭团圆</text>
+    </view>
+    <view class="social-item">
+      <view class="social-icon">🌱</view>
+      <text class="social-title">绿色生产</text>
+      <text class="social-desc">环保工艺，可持续发展</text>
+    </view>
+    <view class="social-item">
+      <view class="social-icon">🏘️</view>
+      <text class="social-title">乡村振兴</text>
+      <text class="social-desc">带动茶农增收致富</text>
+    </view>
+    <view class="social-item">
+      <view class="social-icon">📚</view>
+      <text class="social-title">文化传承</text>
+      <text class="social-desc">弘扬茯茶文化</text>
+    </view>
+  </view>
+
+
+</view>

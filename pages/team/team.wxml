@@ -1,0 +1,77 @@
+<view class="container">
+  <!-- 顶部标题 -->
+  <view class="team-header">
+    <text class="header-title">项目团队</text>
+    <text class="header-subtitle">专业团队 · 匠心品质</text>
+  </view>
+
+  <!-- 核心团队 -->
+  <view class="section-title">核心团队</view>
+  <view class="team-list">
+    <view class="team-card" wx:for="{{coreTeam}}" wx:key="id">
+      <view class="team-avatar">{{item.avatar}}</view>
+      <view class="team-info">
+        <view class="team-header-info">
+          <text class="team-name">{{item.name}}</text>
+          <text class="team-position">{{item.position}}</text>
+        </view>
+        <text class="team-desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 组织架构 -->
+  <view class="section-title">组织架构</view>
+  <view class="dept-grid">
+    <view class="dept-item" wx:for="{{departments}}" wx:key="id">
+      <text class="dept-icon">{{item.icon}}</text>
+      <text class="dept-name">{{item.name}}</text>
+      <text class="dept-count">{{item.count}}人</text>
+    </view>
+  </view>
+
+  <!-- 专家顾问 -->
+  <view class="section-title">专家顾问</view>
+  <view class="advisor-list">
+    <view class="advisor-card" wx:for="{{advisors}}" wx:key="id">
+      <view class="advisor-avatar">{{item.avatar}}</view>
+      <view class="advisor-info">
+        <text class="advisor-name">{{item.name}}</text>
+        <text class="advisor-title">{{item.title}}</text>
+        <text class="advisor-field">{{item.field}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 团队文化 -->
+  <view class="section-title">团队文化</view>
+  <view class="culture-card">
+    <view class="culture-item">
+      <text class="culture-icon">🎯</text>
+      <text class="culture-title">专业专注</text>
+      <text class="culture-desc">专注茯茶产业，追求极致品质</text>
+    </view>
+    <view class="culture-item">
+      <text class="culture-icon">🤝</text>
+      <text class="culture-title">协作共赢</text>
+      <text class="culture-desc">团队协作，共同成长</text>
+    </view>
+    <view class="culture-item">
+      <text class="culture-icon">💡</text>
+      <text class="culture-title">持续创新</text>
+      <text class="culture-desc">勇于创新，引领行业</text>
+    </view>
+    <view class="culture-item">
+      <text class="culture-icon">❤️</text>
+      <text class="culture-title">回馈社会</text>
+      <text class="culture-desc">热心公益，责任担当</text>
+    </view>
+  </view>
+
+  <!-- 加入我们 -->
+  <view class="join-section">
+    <text class="join-title">加入我们</text>
+    <text class="join-desc">诚邀有志之士加入茯忆长安大家庭</text>
+    <button class="join-btn" bindtap="contactUs">联系我们</button>
+  </view>
+</view>

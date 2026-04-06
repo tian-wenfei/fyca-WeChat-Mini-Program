@@ -1,0 +1,98 @@
+<view class="container">
+  <!-- 顶部标题区 -->
+  <view class="tech-header">
+    <text class="header-title">产品与技术</text>
+    <text class="header-subtitle">传统工艺 × 现代科技</text>
+  </view>
+
+  <!-- 核心技术 -->
+  <view class="section-title">核心技术</view>
+  <view class="tech-list">
+    <view class="tech-item">
+      <view class="tech-icon">🤖</view>
+      <view class="tech-info">
+        <text class="tech-name">AI视觉识别系统</text>
+        <text class="tech-desc">实时监测金花生长状态，分级精度超98%</text>
+      </view>
+    </view>
+    <view class="tech-item">
+      <view class="tech-icon">🔬</view>
+      <view class="tech-info">
+        <text class="tech-name">红外光谱技术</text>
+        <text class="tech-desc">精准检测硒含量与发酵状态</text>
+      </view>
+    </view>
+    <view class="tech-item">
+      <view class="tech-icon">📱</view>
+      <view class="tech-info">
+        <text class="tech-name">5G物联网</text>
+        <text class="tech-desc">远程监控生产过程，实时数据传输</text>
+      </view>
+    </view>
+    <view class="tech-item">
+      <view class="tech-icon">⚙️</view>
+      <view class="tech-info">
+        <text class="tech-name">智能化控制系统</text>
+        <text class="tech-desc">自动调节温湿度，确保发花质量</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 制茶工艺 -->
+  <view class="section-title">制茶工艺</view>
+  <view class="process-flow">
+    <view class="process-item" wx:for="{{processes}}" wx:key="id">
+      <view class="process-step">{{item.step}}</view>
+      <view class="process-content">
+        <text class="process-title">{{item.title}}</text>
+        <text class="process-desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 核心产品 -->
+  <view class="section-title">核心产品</view>
+  <view class="product-series">
+    <view class="series-card">
+      <view class="series-header">
+        <text class="series-emoji">🤖</text>
+        <text class="series-name">智能发花机2.0</text>
+      </view>
+      <text class="series-desc">历经3年30余次实践，2次迭代更新，结合AI识别、红外光谱和5G物联网技术，实现富硒茯茶生产过程的精准控制与数字化管理。</text>
+      <view class="series-features">
+        <text class="feature-tag">AI视觉识别系统</text>
+        <text class="feature-tag">红外光谱模块</text>
+        <text class="feature-tag">5G物联网监测</text>
+        <text class="feature-tag">智能控制系统</text>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 质量保障 -->
+  <view class="section-title">质量保障</view>
+  <view class="quality-grid">
+    <view class="quality-item">
+      <text class="quality-icon">🔍</text>
+      <text class="quality-title">原料筛选</text>
+      <text class="quality-desc">严格筛选优质茶叶原料</text>
+    </view>
+    <view class="quality-item">
+      <text class="quality-icon">🏭</text>
+      <text class="quality-title">标准化生产</text>
+      <text class="quality-desc">全程标准化生产流程</text>
+    </view>
+    <view class="quality-item">
+      <text class="quality-icon">🧪</text>
+      <text class="quality-title">质量检测</text>
+      <text class="quality-desc">多道质量检测工序</text>
+    </view>
+    <view class="quality-item">
+      <text class="quality-icon">📦</text>
+      <text class="quality-title">溯源系统</text>
+      <text class="quality-desc">全程可追溯管理系统</text>
+    </view>
+  </view>
+
+
+</view>

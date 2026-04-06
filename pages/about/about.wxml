@@ -1,0 +1,57 @@
+<view class="container">
+  <!-- 顶部大图 -->
+  <view class="about-header">
+    <view class="header-content">
+      <text class="header-title">关于茯忆长安</text>
+      <text class="header-subtitle">传承与创新并重的茯茶企业</text>
+    </view>
+  </view>
+
+  <!-- 项目介绍 -->
+  <view class="section-title">项目介绍</view>
+  <view class="about-card">
+    <text class="about-text">茯兴硒乡项目聚焦富硒茯茶生产核心环节，针对传统发花工艺依赖经验、质量不稳定、效率低下等痛点，研发出集AI视觉识别、5G物联网和红外光谱技术于一体的智能发花设备，实现茯茶生产过程的精准控制与数字化管理。
+
+项目通过智能化技术，解决了传统茯茶发花依赖经验、成功率低、效率低下等问题，推动茶产业从"经验依赖"向"数据驱动"转型。</text>
+  </view>
+
+  <!-- 发展历程 -->
+  <view class="section-title">发展历程</view>
+  <view class="timeline">
+    <view class="timeline-item" wx:for="{{timeline}}" wx:key="year">
+      <view class="timeline-dot"></view>
+      <view class="timeline-content">
+        <text class="timeline-year">{{item.year}}</text>
+        <text class="timeline-title">{{item.title}}</text>
+        <text class="timeline-desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 企业文化 -->
+  <view class="section-title">企业文化</view>
+  <view class="culture-grid">
+    <view class="culture-item">
+      <view class="culture-icon">🎯</view>
+      <text class="culture-title">企业使命</text>
+      <text class="culture-desc">传承千年茯茶文化，创新现代制茶工艺</text>
+    </view>
+    <view class="culture-item">
+      <view class="culture-icon">👁️</view>
+      <text class="culture-title">企业愿景</text>
+      <text class="culture-desc">成为中国领先的茯茶品牌</text>
+    </view>
+    <view class="culture-item">
+      <view class="culture-icon">⚖️</view>
+      <text class="culture-title">核心价值观</text>
+      <text class="culture-desc">品质为本，诚信经营，创新发展</text>
+    </view>
+    <view class="culture-item">
+      <view class="culture-icon">💝</view>
+      <text class="culture-title">社会责任</text>
+      <text class="culture-desc">科技助力公益，回馈社会</text>
+    </view>
+  </view>
+
+
+</view>

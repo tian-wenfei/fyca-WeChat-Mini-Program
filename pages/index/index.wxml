@@ -1,0 +1,155 @@
+<view class="container">
+  <!-- 轮播图区域 -->
+  <swiper class="banner" indicator-dots="{{true}}" autoplay="{{true}}" interval="3000" duration="500" circular="{{true}}">
+    <swiper-item>
+      <view class="banner-item">
+        <image class="banner-image" src="/images/one.jpg" mode="aspectFill" />
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="banner-item">
+        <image class="banner-image" src="/images/two.jpg" mode="aspectFill" />
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="banner-item">
+        <image class="banner-image" src="/images/three.jpg" mode="aspectFill" />
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="banner-item">
+        <image class="banner-image" src="/images/four.jpg" mode="aspectFill" />
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <!-- 快捷入口 -->
+  <view class="quick-entry">
+    <view class="quick-item" bindtap="goToPage" data-page="/pages/about/about">
+      <view class="quick-icon">🏛️</view>
+      <text class="quick-text">项目简介</text>
+    </view>
+    <view class="quick-item" bindtap="goToPage" data-page="/pages/technology/technology">
+      <view class="quick-icon">🔬</view>
+      <text class="quick-text">产品技术</text>
+    </view>
+    <view class="quick-item" bindtap="goToPage" data-page="/pages/value/value">
+      <view class="quick-icon">💎</view>
+      <text class="quick-text">核心价值</text>
+    </view>
+    <view class="quick-item" bindtap="goToPage" data-page="/pages/missing/missing">
+      <view class="quick-icon">🤝</view>
+      <text class="quick-text">公益寻人</text>
+    </view>
+  </view>
+
+  <!-- 企业简介 -->
+  <view class="section-title">项目简介</view>
+  <view class="intro-card">
+    <view class="intro-content">
+      <text class="intro-text">茯兴硒乡项目聚焦富硒茯茶生产核心环节，针对传统发花工艺依赖经验、质量不稳定、效率低下等痛点，研发出集AI视觉识别、5G物联网和红外光谱技术于一体的智能发花设备，实现茯茶生产过程的精准控制与数字化管理。</text>
+    </view>
+    <view class="intro-tags">
+      <text class="tag">AI视觉识别</text>
+      <text class="tag">5G物联网</text>
+      <text class="tag">红外光谱技术</text>
+    </view>
+  </view>
+
+  <!-- 核心产品 -->
+  <view class="section-title">核心产品</view>
+  <view class="core-product">
+    <view class="core-product-image">
+      <image class="product-image" src="/images/智能化发花装置2.0.jpg" mode="aspectFill" />
+    </view>
+    <view class="core-product-info">
+      <text class="core-product-title">智能发花机2.0</text>
+      <text class="core-product-desc">历经3年30余次实践，2次迭代更新，结合AI识别、红外光谱和5G物联网技术，实现富硒茯茶生产过程的精准控制与数字化管理。</text>
+      <view class="core-product-features">
+        <view class="feature-item">
+          <text class="feature-check">✓</text>
+          <text class="feature-text">AI视觉识别系统，分级精度超98%</text>
+        </view>
+        <view class="feature-item">
+          <text class="feature-check">✓</text>
+          <text class="feature-text">红外光谱模块，实时监测硒含量与发酵状态</text>
+        </view>
+        <view class="feature-item">
+          <text class="feature-check">✓</text>
+          <text class="feature-text">5G物联网监测大屏，远程实时监控</text>
+        </view>
+        <view class="feature-item">
+          <text class="feature-check">✓</text>
+          <text class="feature-text">茶叶梯级利用与处置一体化系统</text>
+        </view>
+        <view class="feature-item">
+          <text class="feature-check">✓</text>
+          <text class="feature-text">"四管"服务模式：管技术+管质量+管维修+管文创</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 项目成效 -->
+  <view class="section-title">项目成效</view>
+  <view class="stats-container">
+    <view class="stat-item">
+      <text class="stat-number">98.6%</text>
+      <text class="stat-label">发花成功率</text>
+    </view>
+    <view class="stat-item">
+      <view class="stat-number-with-arrow">
+        <text class="stat-number">55%</text>
+        <text class="arrow-up">↑</text>
+      </view>
+      <text class="stat-label">茶叶利用效率</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-number">3.2万</text>
+      <text class="stat-label">户均年增收</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-number">121</text>
+      <text class="stat-label">就业岗位</text>
+    </view>
+  </view>
+
+  <!-- 核心价值 -->
+  <view class="section-title">核心价值</view>
+  <view class="welfare-card">
+    <view class="welfare-content">
+      <text class="welfare-title">技术突破</text>
+      <text class="welfare-desc">AI视觉识别精度≥98%，结合红外光谱与5G物联网，实现富硒茯茶发花过程精准智控，金花密度提升50%。</text>
+    </view>
+  </view>
+  <view class="welfare-card" style="margin-top: 20rpx;">
+    <view class="welfare-content">
+      <text class="welfare-title">助农增收</text>
+      <text class="welfare-desc">已帮助汉中市西乡镇15户农户年均增收3.2万元，发花成功率提至98.6%，较传统方式提高32个百分点。</text>
+    </view>
+  </view>
+
+  <!-- 联系我们 -->
+  <view class="contact-section">
+    <text class="contact-title">联系我们</text>
+    <view class="contact-info">
+      <view class="contact-item">
+        <text class="contact-icon">📍</text>
+        <text class="contact-text">陕西省西安市长安区子午大道中段39号</text>
+      </view>
+      <view class="contact-item" bindtap="makePhoneCall">
+        <text class="contact-icon">📞</text>
+        <text class="contact-text">+86 15091730188</text>
+      </view>
+      <view class="contact-item" bindtap="copyEmail">
+        <text class="contact-icon">✉️</text>
+        <text class="contact-text">948979226@qq.com</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 版权信息 -->
+  <view class="footer">
+    <text class="footer-text">© 2026 茯忆长安 版权所有</text>
+  </view>
+</view>

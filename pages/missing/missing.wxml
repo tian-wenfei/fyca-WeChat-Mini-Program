@@ -1,0 +1,68 @@
+<view class="container">
+  <!-- 顶部横幅 -->
+  <view class="missing-header">
+    <text class="header-icon">🤝</text>
+    <text class="header-title">公益寻人</text>
+    <text class="header-subtitle">爱心传递希望 · 温情暖人间</text>
+  </view>
+
+  <!-- 项目介绍 -->
+  <view class="intro-section">
+    <view class="intro-card">
+      <view class="intro-icon-wrapper">
+        <text class="intro-icon">💝</text>
+      </view>
+      <text class="intro-main-title">让爱回家</text>
+      <text class="intro-main-desc">每一次转发，都是一份希望</text>
+      <view class="intro-divider"></view>
+      <text class="intro-text">我们致力于为每一个失踪的孩子搭建回家的桥梁，用爱心传递希望，用行动温暖人心。每一次转发都可能成为孩子回家的线索，每一次关注都能给失踪家庭带去力量。让我们一起伸出援手，让更多家庭重享团圆的幸福时光。</text>
+      <view class="intro-tags">
+        <view class="tag-item">
+          <text class="tag-icon">🤝</text>
+          <text class="tag-text">爱心传递</text>
+        </view>
+        <view class="tag-item">
+          <text class="tag-icon">📢</text>
+          <text class="tag-text">信息宣传</text>
+        </view>
+        <view class="tag-item">
+          <text class="tag-icon">💚</text>
+          <text class="tag-text">公益免费</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 失踪儿童信息 -->
+  <view class="section-title">失踪儿童信息</view>
+  <view class="missing-list">
+    <view class="missing-card" wx:for="{{missingChildren}}" wx:key="id">
+      <view class="missing-header">
+        <text class="missing-time">{{item.time}}</text>
+        <text class="missing-age">{{item.age}}岁，{{item.gender}}</text>
+      </view>
+      <view class="missing-body">
+        <view class="missing-image" wx:if="{{item.image}}">
+          <image src="{{item.image}}" mode="aspectFill"></image>
+        </view>
+        <view class="missing-info">
+          <text class="missing-name">{{item.name}}</text>
+          <text class="missing-desc">{{item.desc}}</text>
+        </view>
+      </view>
+      <view class="missing-location">
+        <text class="location-icon">📍</text>
+        <text class="location-text">失踪地点：{{item.location}}</text>
+      </view>
+      <view class="missing-contact" wx:if="{{item.contact}}">
+        <text class="contact-text">联系电话：{{item.contact}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 数据来源 -->
+  <view class="source-section">
+    <text class="source-text">数据来源：公安部儿童失踪信息紧急发布平台</text>
+  </view>
+</view>

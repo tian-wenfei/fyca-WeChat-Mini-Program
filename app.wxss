@@ -1,0 +1,185 @@
+/* 全局样式 */
+page {
+  --primary-color: #2E7D32;
+  --secondary-color: #4CAF50;
+  --accent-color: #81C784;
+  --bg-color: #E8F5E9;
+  --card-bg: #F1F8E9;
+  --text-dark: #1B5E20;
+  --text-light: #558B2F;
+  --border-color: #C8E6C9;
+  
+  background-color: var(--bg-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+.container {
+  padding: 20rpx;
+  min-height: 100vh;
+}
+
+/* 标题样式 */
+.section-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 40rpx 0 30rpx;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80rpx;
+  height: 4rpx;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  margin: 16rpx auto 0;
+  border-radius: 2rpx;
+}
+
+/* 卡片样式 */
+.card {
+  background: var(--card-bg);
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin: 20rpx 0;
+  box-shadow: 0 4rpx 16rpx rgba(139, 69, 19, 0.1);
+  border: 1rpx solid var(--border-color);
+}
+
+.card-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 20rpx;
+}
+
+.card-content {
+  font-size: 28rpx;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+/* 按钮样式 */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: 40rpx;
+  padding: 24rpx 60rpx;
+  font-size: 30rpx;
+  border: none;
+  box-shadow: 0 4rpx 12rpx rgba(139, 69, 19, 0.3);
+}
+
+.btn-primary::after {
+  border: none;
+}
+
+/* 标签样式 */
+.tag {
+  display: inline-block;
+  background: rgba(46, 125, 50, 0.1);
+  color: var(--primary-color);
+  padding: 8rpx 20rpx;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+  margin: 8rpx;
+}
+
+/* 列表样式 */
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 24rpx;
+  background: var(--card-bg);
+  margin: 16rpx 0;
+  border-radius: 12rpx;
+  border: 1rpx solid var(--border-color);
+}
+
+.list-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 36rpx;
+  margin-right: 24rpx;
+}
+
+.list-content {
+  flex: 1;
+}
+
+.list-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 8rpx;
+}
+
+.list-desc {
+  font-size: 26rpx;
+  color: var(--text-light);
+}
+
+/* 网格布局 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+}
+
+.grid-item {
+  background: var(--card-bg);
+  border-radius: 16rpx;
+  padding: 30rpx;
+  text-align: center;
+  border: 1rpx solid var(--border-color);
+}
+
+.grid-icon {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto 20rpx;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 48rpx;
+}
+
+.grid-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 12rpx;
+}
+
+.grid-desc {
+  font-size: 24rpx;
+  color: var(--text-light);
+}
+
+/* 动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}

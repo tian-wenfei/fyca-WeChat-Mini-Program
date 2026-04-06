@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/technology/technology",
+    "pages/value/value",
+    "pages/team/team",
+    "pages/missing/missing",
+    "pages/contact/contact"
+  ],
+  "subpackages": [
+    {
+      "root": "subpackage",
+      "pages": []
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2E7D32",
+    "navigationBarTitleText": "茯忆长安",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#E8F5E9"
+  },
+  "tabBar": {
+    "color": "#2E7D32",
+    "selectedColor": "#4CAF50",
+    "backgroundColor": "#F1F8E9",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "简介"
+      },
+      {
+        "pagePath": "pages/technology/technology",
+        "text": "技术"
+      },
+      {
+        "pagePath": "pages/value/value",
+        "text": "价值"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
