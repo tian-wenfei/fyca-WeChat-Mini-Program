@@ -1,53 +1,71 @@
 <view class="container">
-  <!-- 顶部横幅 -->
-  <view class="contact-header">
-    <text class="header-title">联系我们</text>
-    <text class="header-subtitle">期待与您的沟通</text>
-  </view>
-
-  <!-- 联系方式 -->
-  <view class="section-title">联系方式</view>
-  <view class="contact-cards">
-    <view class="contact-card" bindtap="copyEmail">
-      <view class="card-icon">✉️</view>
-      <text class="card-label">电子邮箱</text>
-      <text class="card-value">948979226@qq.com</text>
-    </view>
-    <view class="contact-card" bindtap="makePhoneCall">
-      <view class="card-icon">📞</view>
-      <text class="card-label">联系电话</text>
-      <text class="card-value">+86 15091730188</text>
-    </view>
-    <view class="contact-card">
-      <view class="card-icon">📍</view>
-      <text class="card-label">公司地址</text>
-      <text class="card-value">陕西省西安市长安区子午大道中段39号</text>
+  <!-- Hero Section -->
+  <view class="hero-section">
+    <view class="hero-bg"></view>
+    <view class="hero-content">
+      <text class="hero-badge">期待与您的沟通</text>
+      <text class="hero-title">联系我们</text>
+      <text class="hero-subtitle">有任何问题或合作意向，欢迎随时联系</text>
     </view>
   </view>
 
-  <!-- 社交媒体 -->
-  <view class="section-title">关注我们</view>
-  <view class="social-section">
-    <view class="social-item" bindtap="openWechat">
-      <view class="social-icon">📱</view>
-      <text class="social-name">微信</text>
+  <!-- Contact Methods -->
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">📞</view>
+      <text class="section-title">联系方式</text>
     </view>
-    <view class="social-item" bindtap="openDouyin">
-      <view class="social-icon">📺</view>
-      <text class="social-name">抖音</text>
-    </view>
-    <view class="social-item" bindtap="openWebsite">
-      <view class="social-icon">🌐</view>
-      <text class="social-name">官网</text>
-    </view>
-    <view class="social-item" bindtap="openWeibo">
-      <view class="social-icon">📝</view>
-      <text class="social-name">微博</text>
+    <view class="contact-list">
+      <view class="contact-item" bindtap="makePhoneCall">
+        <view class="contact-icon">📞</view>
+        <view class="contact-info">
+          <text class="contact-label">联系电话</text>
+          <text class="contact-value">+86 15091730188</text>
+        </view>
+        <view class="contact-action">拨打</view>
+      </view>
+      <view class="contact-item" bindtap="copyEmail">
+        <view class="contact-icon">✉️</view>
+        <view class="contact-info">
+          <text class="contact-label">电子邮箱</text>
+          <text class="contact-value">948979226@qq.com</text>
+        </view>
+        <view class="contact-action">复制</view>
+      </view>
+      <view class="contact-item">
+        <view class="contact-icon">📍</view>
+        <view class="contact-info">
+          <text class="contact-label">公司地址</text>
+          <text class="contact-value">陕西省渭南市临渭区向阳路街道办事处文昌阁社区</text>
+        </view>
+        <view class="contact-action">查看</view>
+      </view>
     </view>
   </view>
 
-  <!-- 版权信息 -->
-  <view class="footer">
-    <text class="footer-text">© 2026 茯忆长安 版权所有</text>
+  <!-- Social Media -->
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">💬</view>
+      <text class="section-title">关注我们</text>
+    </view>
+    <view class="social-grid">
+      <view class="social-card" bindtap="openWechat">
+        <view class="social-icon">📱</view>
+        <text class="social-name">微信</text>
+      </view>
+      <view class="social-card" bindtap="openDouyin">
+        <view class="social-icon">📺</view>
+        <text class="social-name">抖音</text>
+      </view>
+      <view class="social-card" bindtap="openWebsite">
+        <view class="social-icon">🌐</view>
+        <text class="social-name">官网</text>
+      </view>
+      <view class="social-card" bindtap="openWeibo">
+        <view class="social-icon">📝</view>
+        <text class="social-name">微博</text>
+      </view>
+    </view>
   </view>
 </view>

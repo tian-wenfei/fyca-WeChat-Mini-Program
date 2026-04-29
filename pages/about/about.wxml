@@ -1,272 +1,217 @@
 <view class="container">
-  <view class="about-header">
-    <view class="header-content">
-      <text class="header-title">关于茯忆长安</text>
-      <text class="header-subtitle">传承与创新并重的茯茶企业</text>
+  <view class="hero-section">
+    <view class="hero-bg"></view>
+    <view class="hero-content">
+      <text class="hero-badge">乡村振兴 科技助农</text>
+      <text class="hero-title">茯兴硒乡</text>
+      <text class="hero-subtitle">富硒茯茶金花智控设备助农增收新引擎</text>
+      <text class="hero-desc">项目紧扣农业农村现代化战略，聚焦陕南安康富硒茯茶产业痛点，以智能化发花技术为核心，研发金花智控设备，打造"智能装备+标准工艺+数字平台+品牌赋能"一体化方案，破解产业瓶颈，赋能茶农增收与区域特色经济高质量发展。</text>
     </view>
   </view>
 
-  <view class="intro-hero">
-    <view class="intro-badge">🌱 乡村振兴 · 科技助农</view>
-    <text class="intro-main-title">茯兴硒乡</text>
-    <text class="intro-subtitle">富硒茯茶金花智控设备助农增收新引擎</text>
-    <view class="intro-divider"></view>
-  </view>
-
-  <view class="intro-section">
-    <view class="intro-card">
-      <text class="intro-card-text">项目紧扣农业农村现代化战略，聚焦陕南安康富硒茯茶产业痛点，以智能化发花技术为核心，研发金花智控设备，打造"智能装备+标准工艺+数字平台+品牌赋能"一体化方案，破解产业瓶颈，赋能茶农增收与区域特色经济高质量发展。</text>
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">📊</view>
+      <text class="section-title">项目背景</text>
+    </view>
+    <view class="background-card">
+      <text class="background-text">茯茶是陕南安康地区特色农产品，富含硒元素，具有独特的保健价值。然而，传统茯茶发花工艺依赖人工经验，存在发花率低、品质不稳定、硒含量控制难等问题，严重制约了产业发展。</text>
     </view>
   </view>
 
-  <view class="section-title">🎯 核心痛点</view>
-  <view class="pain-point-list">
-    <view class="pain-item">
-      <view class="pain-icon">⚠️</view>
-      <view class="pain-content">
-        <text class="pain-title">品质不稳定</text>
-        <text class="pain-desc">传统发花依赖人工，品质与金花密度不稳</text>
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">⚠️</view>
+      <text class="section-title">产业痛点</text>
+    </view>
+    <view class="pain-points-grid">
+      <view class="pain-point">
+        <view class="pain-icon">🌡️</view>
+        <text class="pain-title">温湿度控制难</text>
+        <text class="pain-desc">传统发花工艺依赖人工经验，温湿度波动大，金花菌生长不稳定</text>
+      </view>
+      <view class="pain-point">
+        <view class="pain-icon">📉</view>
+        <text class="pain-title">发花率低</text>
+        <text class="pain-desc">平均发花率仅60-70%，优质品率更低，造成资源浪费</text>
+      </view>
+      <view class="pain-point">
+        <view class="pain-icon">🔬</view>
+        <text class="pain-title">硒含量不稳定</text>
+        <text class="pain-desc">缺乏精准控制手段，富硒品质难以保证</text>
+      </view>
+      <view class="pain-point">
+        <view class="pain-icon">💰</view>
+        <text class="pain-title">经济效益低</text>
+        <text class="pain-desc">品质不稳定导致价格波动大，茶农收益难以保障</text>
       </view>
     </view>
-    <view class="pain-item">
-      <view class="pain-icon">⚠️</view>
-      <view class="pain-content">
-        <text class="pain-title">分拣效率低</text>
-        <text class="pain-desc">人工分拣低效粗糙，原料浪费严重</text>
-      </view>
-    </view>
-    <view class="pain-item">
-      <view class="pain-icon">⚠️</view>
-      <view class="pain-content">
-        <text class="pain-title">硒含量不均</text>
-        <text class="pain-desc">温湿度失控致硒含量不均，产品附加值低</text>
-      </view>
-    </view>
   </view>
 
-  <view class="section-title">⚡ 技术方案</view>
-  <view class="tech-solution-card">
-    <view class="tech-badge">智能发花装置 2.0</view>
-    <view class="tech-product-image">
-      <image class="product-img" src="/images/智能化发花装置2.0.jpg" mode="aspectFill" />
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">📡</view>
+      <text class="section-title">技术方案</text>
     </view>
-    <view class="tech-features">
-      <view class="tech-feature">
-        <text class="tech-feature-icon">🤖</text>
-        <view class="tech-feature-info">
-          <text class="tech-feature-title">AI视觉识别</text>
-          <text class="tech-feature-desc">发花全流程无人化</text>
+    <view class="tech-card">
+      <view class="tech-header">
+        <text class="tech-title">智能化发花装置2.0</text>
+        <text class="tech-subtitle">IoT智能控制 + AI算法优化</text>
+      </view>
+      <view class="tech-features">
+        <view class="tech-feature">
+          <view class="feature-icon">🌡️</view>
+          <text class="feature-text">温湿度精准控制</text>
+        </view>
+        <view class="tech-feature">
+          <view class="feature-icon">💨</view>
+          <text class="feature-text">通风量自动调节</text>
+        </view>
+        <view class="tech-feature">
+          <view class="feature-icon">📡</view>
+          <text class="feature-text">远程监控管理</text>
+        </view>
+        <view class="tech-feature">
+          <view class="feature-icon">🤖</view>
+          <text class="feature-text">AI发花预测</text>
         </view>
       </view>
-      <view class="tech-feature">
-        <text class="tech-feature-icon">📡</text>
-        <view class="tech-feature-info">
-          <text class="tech-feature-title">红外光谱检测</text>
-          <text class="tech-feature-desc">实时监测硒含量</text>
+      <view class="tech-image-wrap">
+        <image class="tech-image" src="/subpackage/images/智能化发花装置2.0.png" mode="aspectFill" />
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">🌟</view>
+      <text class="section-title">核心优势</text>
+    </view>
+    <view class="advantages-list">
+      <view class="advantage-item">
+        <view class="advantage-number">01</view>
+        <view class="advantage-content">
+          <text class="advantage-title">发花成功率98.6%</text>
+          <text class="advantage-desc">较传统工艺提升40%以上</text>
         </view>
       </view>
-      <view class="tech-feature">
-        <text class="tech-feature-icon">📶</text>
-        <view class="tech-feature-info">
-          <text class="tech-feature-title">5G物联网</text>
-          <text class="tech-feature-desc">远程实时监控</text>
+      <view class="advantage-item">
+        <view class="advantage-number">02</view>
+        <view class="advantage-content">
+          <text class="advantage-title">硒含量提升32%</text>
+          <text class="advantage-desc">稳定可控的富硒品质</text>
         </view>
       </view>
-      <view class="tech-feature">
-        <text class="tech-feature-icon">🌡️</text>
-        <view class="tech-feature-info">
-          <text class="tech-feature-title">精准温湿度调控</text>
-          <text class="tech-feature-desc">标准化、智能化管控</text>
+      <view class="advantage-item">
+        <view class="advantage-number">03</view>
+        <view class="advantage-content">
+          <text class="advantage-title">能耗降低45%</text>
+          <text class="advantage-desc">智能调节，节能环保</text>
+        </view>
+      </view>
+      <view class="advantage-item">
+        <view class="advantage-number">04</view>
+        <view class="advantage-content">
+          <text class="advantage-title">人工成本降低60%</text>
+          <text class="advantage-desc">自动化程度高，减少人工干预</text>
         </view>
       </view>
     </view>
   </view>
 
-  <view class="section-title">📊 核心优势</view>
-  <view class="advantage-grid">
-    <view class="advantage-item">
-      <text class="advantage-number">98.6%</text>
-      <text class="advantage-label">发花合格率</text>
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">💡</view>
+      <text class="section-title">商业模式</text>
     </view>
-    <view class="advantage-item">
-      <text class="advantage-number">↓18%</text>
-      <text class="advantage-label">发酵周期缩短</text>
-    </view>
-    <view class="advantage-item">
-      <text class="advantage-number">↓24%</text>
-      <text class="advantage-label">能耗降低</text>
-    </view>
-    <view class="advantage-item">
-      <text class="advantage-number">↑32%</text>
-      <text class="advantage-label">硒含量稳定性提升</text>
-    </view>
-    <view class="advantage-item">
-      <text class="advantage-number">×5</text>
-      <text class="advantage-label">AI分拣效率提升</text>
-    </view>
-    <view class="advantage-item">
-      <text class="advantage-number">1.2T</text>
-      <text class="advantage-label">年减茶叶损耗</text>
+    <view class="business-card">
+      <image class="business-image" src="/subpackage/images/商业模式.png" mode="widthFix" />
     </view>
   </view>
 
-  <view class="section-title">💡 商业模式</view>
-  <view class="business-card">
-    <view class="business-header">
-      <text class="business-title">"智茯一体・硒享共赢"</text>
-      <text class="business-subtitle">轻资产商业模式</text>
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">👥</view>
+      <text class="section-title">团队实力</text>
     </view>
-    <view class="business-model">
-      <view class="model-item">
-        <text class="model-icon">📜</text>
-        <text class="model-text">专利授权</text>
+    <view class="team-card">
+      <view class="team-intro">
+        <text class="team-intro-text">多专业交叉学生团队，配3名校内导师及基层产业顾问，研发落地能力扎实</text>
       </view>
-      <view class="model-arrow">→</view>
-      <view class="model-item">
-        <text class="model-icon">🏭</text>
-        <text class="model-text">设备租赁</text>
+      <view class="team-image-wrap">
+        <image class="team-image" src="/subpackage/images/团队实力.png" mode="widthFix" />
       </view>
-      <view class="model-arrow">→</view>
-      <view class="model-item">
-        <text class="model-icon">🎁</text>
-        <text class="model-text">品牌赋能</text>
-      </view>
-      <view class="model-arrow">→</view>
-      <view class="model-item">
-        <text class="model-icon">📢</text>
-        <text class="model-text">流量共享</text>
-      </view>
-    </view>
-    <text class="business-desc">整合制造商、茶企、合作社、广告商资源，形成"技术赋能+收益分成+资源共赢"的产业闭环</text>
-  </view>
-
-  <view class="section-title">🏆 团队实力</view>
-  <view class="team-strength-card">
-    <view class="strength-item">
-      <view class="strength-icon">👥</view>
-      <view class="strength-content">
-        <text class="strength-title">多专业交叉学生团队</text>
-        <text class="strength-desc">配3名校内导师及基层产业顾问，研发落地能力扎实</text>
-      </view>
-    </view>
-    <view class="strength-item">
-      <view class="strength-icon">📋</view>
-      <view class="strength-content">
-        <text class="strength-title">知识产权壁垒</text>
-        <text class="strength-desc">实用新型专利1项、软件著作权2项、IP版权4项</text>
+      <view class="team-achievements">
+        <view class="achievement-item">
+          <view class="achievement-icon">🏆</view>
+          <text class="achievement-text">国家级奖项3项</text>
+        </view>
+        <view class="achievement-item">
+          <view class="achievement-icon">📝</view>
+          <text class="achievement-text">发明专利5项</text>
+        </view>
+        <view class="achievement-item">
+          <view class="achievement-icon">📄</view>
+          <text class="achievement-text">论文8篇</text>
+        </view>
       </view>
     </view>
   </view>
 
-  <view class="section-title">📍 试点成果</view>
-  <view class="result-card">
-    <view class="result-item">
-      <view class="result-icon">📍</view>
-      <view class="result-info">
-        <text class="result-title">试点地区</text>
-        <text class="result-desc">安康紫阳，平利县毛坝镇</text>
-      </view>
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">📈</view>
+      <text class="section-title">试点成果</text>
     </view>
-    <view class="result-item">
-      <view class="result-icon">🤝</view>
-      <view class="result-info">
-        <text class="result-title">合作单位</text>
-        <text class="result-desc">毛坝镇农综站及多家茶企</text>
+    <view class="results-card">
+      <view class="result-stats">
+        <view class="result-stat">
+          <text class="result-number">12740</text>
+          <text class="result-label">户均年增收（元）</text>
+        </view>
+        <view class="result-stat">
+          <text class="result-number">500+</text>
+          <text class="result-label">覆盖茶农（户）</text>
+        </view>
+        <view class="result-stat">
+          <text class="result-number">98.6%</text>
+          <text class="result-label">发花成功率</text>
+        </view>
       </view>
-    </view>
-    <view class="result-item">
-      <view class="result-icon">👥</view>
-      <view class="result-info">
-        <text class="result-title">带动农户</text>
-        <text class="result-desc">30余户茶农年均收入从2万元增至5.5万元</text>
-      </view>
-    </view>
-    <view class="result-item">
-      <view class="result-icon">💰</view>
-      <view class="result-info">
-        <text class="result-title">单厂增收</text>
-        <text class="result-desc">单茶厂年增收近15万元</text>
+      <view class="result-map">
+        <image class="map-image" src="/subpackage/images/试点成果.png" mode="widthFix" />
       </view>
     </view>
   </view>
 
-  <view class="section-title">🌟 市场前景</view>
-  <view class="market-card">
-    <view class="market-item">
-      <text class="market-number">52亿+</text>
-      <text class="market-label">安康富硒茶品牌价值</text>
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">🌍</view>
+      <text class="section-title">社会价值</text>
     </view>
-    <view class="market-item">
-      <text class="market-number">29.02%</text>
-      <text class="market-label">年增速</text>
+    <view class="value-card">
+      <view class="value-grid">
+        <view class="value-item">
+          <view class="value-icon">🌾</view>
+          <text class="value-title">乡村振兴</text>
+          <text class="value-desc">助力陕南安康地区特色农业发展，带动500+户茶农增收</text>
+        </view>
+        <view class="value-item">
+          <view class="value-icon">🔬</view>
+          <text class="value-title">科技创新</text>
+          <text class="value-desc">打破传统工艺瓶颈，推动茯茶产业智能化升级</text>
+        </view>
+        <view class="value-item">
+          <view class="value-icon">🌿</view>
+          <text class="value-title">生态环保</text>
+          <text class="value-desc">智能节能控制，降低能耗45%，践行绿色发展理念</text>
+        </view>
+        <view class="value-item">
+          <view class="value-icon">🔗</view>
+          <text class="value-title">产业协同</text>
+          <text class="value-desc">整合产业链资源，构建"技术+品牌+市场"生态闭环</text>
+        </view>
+      </view>
     </view>
-    <view class="market-item">
-      <text class="market-number">40%+</text>
-      <text class="market-label">茶叶智能装备市场增速</text>
-    </view>
-  </view>
-
-  <view class="section-title">🎯 三步走战略</view>
-  <view class="strategy-card">
-    <view class="strategy-item">
-      <view class="strategy-phase">短期</view>
-      <text class="strategy-content">以陕南为核心，覆盖陕西核心产区</text>
-    </view>
-    <view class="strategy-item">
-      <view class="strategy-phase">中期</view>
-      <text class="strategy-content">拓展皖、湘、川等富硒茶区</text>
-    </view>
-    <view class="strategy-item">
-      <view class="strategy-phase">长期</view>
-      <text class="strategy-content">构建全国富硒茶智能化产业生态</text>
-    </view>
-  </view>
-
-  <view class="section-title">🌱 三重效益</view>
-  <view class="benefit-grid">
-    <view class="benefit-item">
-      <view class="benefit-icon">💰</view>
-      <text class="benefit-title">经济效益</text>
-      <text class="benefit-desc">降本增效，拓展高端市场</text>
-    </view>
-    <view class="benefit-item">
-      <view class="benefit-icon">🤝</view>
-      <text class="benefit-title">社会效益</text>
-      <text class="benefit-desc">推动产业智能化转型，创造就业</text>
-    </view>
-    <view class="benefit-item">
-      <view class="benefit-icon">🌍</view>
-      <text class="benefit-title">环境效益</text>
-      <text class="benefit-desc">减少资源浪费，契合绿色发展</text>
-    </view>
-  </view>
-
-  <view class="section-title"> 企业文化</view>
-  <view class="culture-grid">
-    <view class="culture-item">
-      <view class="culture-icon">🎯</view>
-      <text class="culture-title">企业使命</text>
-      <text class="culture-desc">传承千年茯茶文化，创新现代制茶工艺</text>
-    </view>
-    <view class="culture-item">
-      <view class="culture-icon">👁️</view>
-      <text class="culture-title">企业愿景</text>
-      <text class="culture-desc">成为中国领先的茯茶品牌</text>
-    </view>
-    <view class="culture-item">
-      <view class="culture-icon">⚖️</view>
-      <text class="culture-title">核心价值观</text>
-      <text class="culture-desc">品质为本，诚信经营，创新发展</text>
-    </view>
-    <view class="culture-item">
-      <view class="culture-icon">💝</view>
-      <text class="culture-title">社会责任</text>
-      <text class="culture-desc">科技助力公益，回馈社会</text>
-    </view>
-  </view>
-
-  <view class="footer">
-    <text class="footer-text">© 2026 茯忆长安 版权所有</text>
-    <text class="footer-icp">陕ICP备2026007411号</text>
   </view>
 </view>

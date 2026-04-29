@@ -1,82 +1,112 @@
 <view class="container">
-  <view class="value-header">
-    <text class="header-title">核心价值</text>
-    <text class="header-subtitle">品质 · 创新 · 责任</text>
+  <view class="hero-section">
+    <view class="hero-bg"></view>
+    <view class="hero-content">
+      <text class="hero-badge">品质 创新 责任</text>
+      <text class="hero-title">核心价值</text>
+      <text class="hero-subtitle">AI赋能 · 数据驱动 · 绿色可持续</text>
+      <text class="hero-desc">项目紧扣农业农村现代化战略，以智能化发花技术为核心，打造"智能装备+标准工艺+数字平台+品牌赋能"一体化方案，推动茯茶产业转型升级。</text>
+    </view>
   </view>
 
-  <view class="section-title">核心价值</view>
-  <view class="value-cards">
-    <view class="value-card value-quality">
-      <view class="card-icon">🤖</view>
-      <text class="card-title">技术突破</text>
-      <text class="card-desc">AI视觉识别精度≥98%，结合红外光谱与5G物联网，实现富硒茯茶发花过程精准智控，金花密度提升50%</text>
-      <view class="value-points">
-        <text class="point">✓ AI视觉识别</text>
-        <text class="point">✓ 红外光谱技术</text>
-        <text class="point">✓ 5G物联网</text>
-      </view>
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">🔬</view>
+      <text class="section-title">技术突破</text>
     </view>
-
-    <view class="value-card value-innovation">
-      <view class="card-icon">🌱</view>
-      <text class="card-title">助农增收</text>
-      <text class="card-desc">已帮助汉中市西乡镇15户农户年均增收3.2万元，发花成功率提至98.6%，较传统方式提高32个百分点</text>
-      <view class="value-points">
-        <text class="point">✓ 农户增收</text>
-        <text class="point">✓ 提高成功率</text>
-        <text class="point">✓ 产业升级</text>
+    <view class="tech-value-card">
+      <view class="tech-value-header">
+        <view class="tech-icon">🤖</view>
+        <view class="tech-info">
+          <text class="tech-title">AI视觉识别精度≥98%</text>
+          <text class="tech-subtitle">结合红外光谱与5G物联网</text>
+        </view>
       </view>
-    </view>
-
-    <view class="value-card value-responsibility">
-      <view class="card-icon">🏭</view>
-      <text class="card-title">产业升级</text>
-      <text class="card-desc">推动茶产业从"经验依赖"向"数据驱动"转型，茶叶利用效率提升55%，能耗降低12%，创造121个就业岗位</text>
-      <view class="value-points">
-        <text class="point">✓ 数据驱动</text>
-        <text class="point">✓ 效率提升</text>
-        <text class="point">✓ 就业创造</text>
+      <view class="tech-value-desc">实现富硒茯茶发花过程精准智控，金花密度提升50%，突破传统工艺瓶颈</view>
+      <view class="tech-tags">
+        <view class="tech-tag">AI视觉识别</view>
+        <view class="tech-tag">红外光谱技术</view>
+        <view class="tech-tag">5G物联网</view>
       </view>
     </view>
   </view>
 
-  <view class="section-title">品质承诺</view>
-  <view class="promise-list">
-    <view class="promise-item" wx:for="{{promises}}" wx:key="id">
-      <view class="promise-icon">{{item.icon}}</view>
-      <view class="promise-content">
-        <text class="promise-title">{{item.title}}</text>
-        <text class="promise-desc">{{item.desc}}</text>
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">💰</view>
+      <text class="section-title">助农增收</text>
+    </view>
+    <view class="income-card">
+      <view class="income-stat-row">
+        <view class="income-stat">
+          <text class="income-number">1.27万</text>
+          <text class="income-label">户均年增收（元）</text>
+        </view>
+        <view class="income-stat">
+          <text class="income-number">15户</text>
+          <text class="income-label">试点农户</text>
+        </view>
+        <view class="income-stat">
+          <text class="income-number">98.6%</text>
+          <text class="income-label">发花成功率</text>
+        </view>
+      </view>
+      <view class="income-desc">已帮助汉中市西乡镇15户农户年均增收3.2万元，发花成功率提升至98.6%，较传统方式提高32个百分点</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">🏭</view>
+      <text class="section-title">产业升级</text>
+    </view>
+    <view class="upgrade-card">
+      <view class="upgrade-items">
+        <view class="upgrade-item">
+          <view class="upgrade-icon">📊</view>
+          <text class="upgrade-title">数据驱动</text>
+          <text class="upgrade-desc">从"经验依赖"向"数据驱动"转型</text>
+        </view>
+        <view class="upgrade-item">
+          <view class="upgrade-icon">⚡</view>
+          <text class="upgrade-title">效率提升</text>
+          <text class="upgrade-desc">茶叶利用效率提升55%，能耗降低12%</text>
+        </view>
+        <view class="upgrade-item">
+          <view class="upgrade-icon">👥</view>
+          <text class="upgrade-title">就业创造</text>
+          <text class="upgrade-desc">带动区域就业121个岗位</text>
+        </view>
       </view>
     </view>
   </view>
 
-  <view class="section-title">社会责任</view>
-  <view class="social-grid">
-    <view class="social-item">
-      <view class="social-icon">🔍</view>
-      <text class="social-title">公益寻人</text>
-      <text class="social-desc">运用AI技术帮助失踪家庭团圆</text>
+  <view class="section">
+    <view class="section-header">
+      <view class="section-icon-box">🌍</view>
+      <text class="section-title">社会责任</text>
     </view>
-    <view class="social-item">
-      <view class="social-icon">🌱</view>
-      <text class="social-title">绿色生产</text>
-      <text class="social-desc">环保工艺，可持续发展</text>
+    <view class="responsibility-grid">
+      <view class="responsibility-item">
+        <view class="responsibility-icon">🔍</view>
+        <text class="responsibility-title">公益寻人</text>
+        <text class="responsibility-desc">运用AI技术帮助失踪家庭团圆</text>
+      </view>
+      <view class="responsibility-item">
+        <view class="responsibility-icon">🌱</view>
+        <text class="responsibility-title">绿色生产</text>
+        <text class="responsibility-desc">环保工艺，可持续发展</text>
+      </view>
+      <view class="responsibility-item">
+        <view class="responsibility-icon">🏘️</view>
+        <text class="responsibility-title">乡村振兴</text>
+        <text class="responsibility-desc">带动茶农增收致富</text>
+      </view>
+      <view class="responsibility-item">
+        <view class="responsibility-icon">📚</view>
+        <text class="responsibility-title">文化传承</text>
+        <text class="responsibility-desc">弘扬茯茶文化</text>
+      </view>
     </view>
-    <view class="social-item">
-      <view class="social-icon">🏘️</view>
-      <text class="social-title">乡村振兴</text>
-      <text class="social-desc">带动茶农增收致富</text>
-    </view>
-    <view class="social-item">
-      <view class="social-icon">📚</view>
-      <text class="social-title">文化传承</text>
-      <text class="social-desc">弘扬茯茶文化</text>
-    </view>
-  </view>
-
-  <view class="footer">
-    <text class="footer-text">© 2026 茯忆长安 版权所有</text>
-    <text class="footer-icp">陕ICP备2026007411号</text>
   </view>
 </view>

@@ -1,6 +1,6 @@
 {
   "libVersion": "3.15.1",
-  "projectname": "%E8%8C%AF%E5%BF%86%E9%95%BF%E5%AE%89",
+  "projectname": "fyca",
   "condition": {},
   "setting": {
     "urlCheck": true,
