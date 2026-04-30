@@ -77,7 +77,7 @@
         </view>
       </view>
       <view class="tech-image-wrap">
-        <image class="tech-image" src="/subpackage/images/智能化发花装置2.0.png" mode="aspectFill" />
+        <image class="tech-image" src="/images/智能化发花装置2.0.png" mode="aspectFill" />
       </view>
     </view>
   </view>
@@ -125,7 +125,7 @@
       <text class="section-title">商业模式</text>
     </view>
     <view class="business-card">
-      <image class="business-image" src="/subpackage/images/商业模式.png" mode="widthFix" />
+      <image class="business-image" src="/images/商业模式.png" mode="widthFix" />
     </view>
   </view>
 
@@ -139,7 +139,7 @@
         <text class="team-intro-text">多专业交叉学生团队，配3名校内导师及基层产业顾问，研发落地能力扎实</text>
       </view>
       <view class="team-image-wrap">
-        <image class="team-image" src="/subpackage/images/团队实力.png" mode="widthFix" />
+        <image class="team-image" src="/images/团队实力.png" mode="widthFix" />
       </view>
       <view class="team-achievements">
         <view class="achievement-item">
@@ -179,7 +179,7 @@
         </view>
       </view>
       <view class="result-map">
-        <image class="map-image" src="/subpackage/images/试点成果.png" mode="widthFix" />
+        <image class="map-image" src="/images/试点成果.png" mode="widthFix" />
       </view>
     </view>
   </view>

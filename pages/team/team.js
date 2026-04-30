@@ -47,21 +47,21 @@ Page({
     advisors: [
       {
         id: 1,
-        avatar: '/subpackage/images/图片1.png',
+        avatar: '/images/图片1.png',
         name: '李万华',
         title: '乡村产业顾问',
         field: '原安康市人社局副局长，现任汉阴县委组织部部长，提供乡村产业方面指导'
       },
       {
         id: 2,
-        avatar: '/subpackage/images/图片2.png',
+        avatar: '/images/图片2.png',
         name: '宁国良',
         title: '乡村振兴顾问',
         field: '原平利县委组织部部长，现任镇坪县常务副县长，有丰富的乡村振兴工作经验'
       },
       {
         id: 3,
-        avatar: '/subpackage/images/图片3.png',
+        avatar: '/images/图片3.png',
         name: '时春喜',
         title: '技术顾问',
         field: '植保技术推广中心主任，三秦果业网、富平县果农协会等企业技术顾问'
